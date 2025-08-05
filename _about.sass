@@ -10,31 +10,39 @@
         color: #444343
         line-height: 1.4
         font-style: italic
-    .box
-        margin: 0 0 0 0 
-        display: flex
-        flex-direction: column
-        align-items: center
-        text-align: center
+    .textbox
+        margin: 0 75px 0 0
         margin-bottom: 40px
-        .textbox
-            h2
-                font-size: 30px
-                font-weight: bold
+        line-height: 1.5
+        h2
+            font-size: 30px
+            font-weight: bold
             h4
                 font-size: 20px
                 color: #787272
-        .imgbox
-            img
-                height: 200px
-                width: 200px
-                border-radius: 50%
-                border: 10px solid #dfe0e1
+    .textbox1
+        margin: 0 0 0 74px
+        margin-bottom: 40px
+        line-height: 1.5
+        h2
+            font-size: 30px
+            font-weight: bold
+            h4
+                font-size: 20px
+                color: #787272
+    .imgbox
+        margin: 0 0 0 0
+        margin-bottom: 40px
+        img
+            height: 180px
+            width: 180px
+            border-radius: 50%
+            border: 10px solid #dfe0e1
     .lastbox
         background-color: #ffc800
         color: #ffff
-        height: 200px
-        width: 200px
+        height: 180px
+        width: 180px
         border-radius: 50%
         display: flex
         justify-content: center
@@ -45,5 +53,33 @@
                 margin: 0 50px
                 font-size: 23px
                 font-weight: bold
-                line-height: 1.4
-                
+                line-height: 1.3
+
+@media (max-width: 480px)
+    #about
+        h1
+            font-size: 32px
+
+        h5
+            font-size: 16px
+
+        .textbox, .textbox1
+            margin: 0
+        h2
+            font-size: 22px
+
+        .imgbox img, .lastbox
+            width: 120px
+            height: 120px
+
+@media (max-width: 768px)
+    #about
+        h1
+            font-size: 40px
+
+        .textbox, .textbox1
+            margin: 0
+
+        .imgbox img
+            width: 150px
+            height: 150px
