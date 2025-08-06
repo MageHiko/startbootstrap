@@ -32,30 +32,40 @@ header .menu nav a:hover {
   color: #c0bd21;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   header .imgbox img {
     width: 120px;
-    height: auto;
-    margin: 10px auto;
-    display: block;
+    height: 40px;
+    margin: 0 20px;
   }
   header .menu {
+    justify-content: center;
+  }
+  header .menu nav a {
+    font-size: 18px;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 576px) {
+  header {
     flex-direction: column;
     align-items: center;
     padding: 10px 0;
   }
-  header .menu nav a {
-    font-size: 18px;
-    margin: 10px 0;
-  }
-}
-@media (max-width: 480px) {
   header .imgbox img {
     width: 100px;
+    height: 35px;
+    margin: 0 10px 15px 10px;
+  }
+  header .menu {
+    width: 100%;
+    justify-content: center;
   }
   header .menu nav a {
     font-size: 16px;
-    margin: 8px 0;
+    margin: 0 10px;
+    display: inline-block;
+    padding: 8px 5px;
   }
 }
 #contact {
@@ -128,7 +138,7 @@ header .menu nav a:hover {
   font-weight: bold;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   #contact .textbox h1 {
     font-size: 40px;
   }
@@ -136,49 +146,48 @@ header .menu nav a:hover {
     font-size: 18px;
     margin: 30px;
   }
+  #contact .minibox,
+  #contact .messagebox {
+    width: 90%;
+    margin: 20px auto;
+  }
   #contact .btn {
     width: 180px;
     font-size: 18px;
-  }
-  #contact .messagebox {
-    height: 250px;
+    margin: 40px auto;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   #contact {
     padding: 30px 10px;
+    height: auto;
+    flex-direction: column;
   }
   #contact .textbox h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
   #contact .textbox h4 {
     font-size: 16px;
     margin: 20px;
   }
-  #contact .messagebox, #contact .minibox {
+  #contact h5 {
+    font-size: 14px;
+  }
+  #contact .minibox,
+  #contact .messagebox {
+    width: 100%;
+    margin: 15px auto;
     flex-direction: column;
-    align-items: flex-start;
     height: auto;
+  }
+  #contact .messagebox h5 {
+    padding: 10px;
+    margin: 5px;
   }
   #contact .btn {
     width: 160px;
     font-size: 16px;
-  }
-}
-@media (max-width: 480px) {
-  #contact .textbox h1 {
-    font-size: 26px;
-  }
-  #contact .textbox h4 {
-    font-size: 14px;
-  }
-  #contact .btn {
-    width: 100%;
-    font-size: 16px;
-    margin: 30px 0;
-  }
-  #contact .messagebox h5 {
-    font-size: 14px;
+    margin: 30px auto;
   }
 }
 #services {
@@ -225,73 +234,63 @@ header .menu nav a:hover {
   line-height: 1.3;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   #services h1 {
-    font-size: 45px;
+    font-size: 48px;
+    margin: 15px;
   }
   #services h5 {
     font-size: 24px;
+    margin: 40px 15px;
   }
   #services .box .icon {
-    margin: 0 60px 20px;
-    width: 150px;
-    height: 150px;
+    margin: 0 80px 20px;
     font-size: 80px;
+    width: 140px;
+    height: 140px;
   }
-  #services .textbox h2 {
+  #services .box .textbox h2 {
     font-size: 28px;
+    margin-bottom: 7px;
   }
-  #services .textbox h4 {
+  #services .box .textbox h4 {
     font-size: 16px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
+  #services {
+    padding: 30px 10px;
+  }
   #services h1 {
     font-size: 36px;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
   }
   #services h5 {
     font-size: 20px;
     margin: 30px 10px;
+    justify-content: center;
+    text-align: center;
   }
   #services .box {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
   #services .box .icon {
-    margin: 20px 0;
+    margin: 0 0 20px 0;
+    font-size: 60px;
     width: 120px;
     height: 120px;
-    font-size: 60px;
   }
-  #services .textbox {
+  #services .box .textbox {
     text-align: center;
-    padding: 0 15px;
   }
-  #services .textbox h2 {
+  #services .box .textbox h2 {
     font-size: 24px;
+    margin-bottom: 6px;
   }
-  #services .textbox h4 {
-    font-size: 15px;
-  }
-}
-@media (max-width: 480px) {
-  #services h1 {
-    font-size: 28px;
-  }
-  #services h5 {
-    font-size: 18px;
-  }
-  #services .box .icon {
-    width: 100px;
-    height: 100px;
-    font-size: 50px;
-    margin: 15px 0;
-  }
-  #services .textbox h2 {
-    font-size: 20px;
-  }
-  #services .textbox h4 {
+  #services .box .textbox h4 {
     font-size: 14px;
   }
 }
@@ -311,7 +310,7 @@ header .menu nav a:hover {
   font-style: italic;
 }
 #about .textbox {
-  margin: 0 75px 0 0;
+  margin: 0px 119px 18px 20px;
   margin-bottom: 40px;
   line-height: 1.5;
 }
@@ -324,7 +323,7 @@ header .menu nav a:hover {
   color: #787272;
 }
 #about .textbox1 {
-  margin: 0 0 0 74px;
+  margin: 1px 27px 18px 113px;
   margin-bottom: 40px;
   line-height: 1.5;
 }
@@ -337,12 +336,22 @@ header .menu nav a:hover {
   color: #787272;
 }
 #about .imgbox {
-  margin: 0 0 0 0;
+  margin: 0 0 0 -5px;
   margin-bottom: 40px;
 }
 #about .imgbox img {
-  height: 180px;
-  width: 180px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 10px solid #dfe0e1;
+}
+#about .imgbox1 {
+  margin: 0 2px 0 0;
+  margin-bottom: 40px;
+}
+#about .imgbox1 img {
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   border: 10px solid #dfe0e1;
 }
@@ -357,41 +366,70 @@ header .menu nav a:hover {
   align-items: center;
   border: 10px solid #dfe0e1;
 }
-#about .lastbox .textbox h3 {
-  margin: 10px -37px -22px 42px;
+#about .lastbox .textboxl h3 {
+  margin: 1px 38px 10px 40px;
   font-size: 23px;
   font-weight: bold;
   line-height: 1.3;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 992px) {
   #about h1 {
-    font-size: 32px;
+    font-size: 42px;
   }
   #about h5 {
-    font-size: 16px;
+    font-size: 20px;
   }
-  #about .textbox, #about .textbox1 {
-    margin: 0;
+  #about .textbox,
+  #about .textbox1 {
+    margin: 0 20px 40px 20px;
   }
-  #about h2 {
-    font-size: 22px;
+  #about .textbox h2,
+  #about .textbox1 h2 {
+    font-size: 26px;
   }
-  #about .imgbox img, #about .lastbox {
-    width: 120px;
-    height: 120px;
+  #about .textbox h2 h4,
+  #about .textbox1 h2 h4 {
+    font-size: 18px;
+  }
+  #about .imgbox img,
+  #about .imgbox1 img,
+  #about .lastbox {
+    height: 150px;
+    width: 150px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   #about h1 {
-    font-size: 40px;
+    font-size: 32px;
+    text-align: center;
   }
-  #about .textbox, #about .textbox1 {
-    margin: 0;
+  #about h5 {
+    font-size: 18px;
+    text-align: center;
   }
-  #about .imgbox img {
-    width: 150px;
-    height: 150px;
+  #about .textbox,
+  #about .textbox1 {
+    margin: 0 10px 30px 10px;
+    text-align: center;
+  }
+  #about .textbox h2,
+  #about .textbox1 h2 {
+    font-size: 22px;
+  }
+  #about .textbox h2 h4,
+  #about .textbox1 h2 h4 {
+    font-size: 16px;
+  }
+  #about .imgbox img,
+  #about .imgbox1 img,
+  #about .lastbox {
+    height: 120px;
+    width: 120px;
+  }
+  #about .lastbox .textbox h3 {
+    font-size: 18px;
+    margin: 10px -20px -15px 20px;
   }
 }
 #team {
@@ -521,9 +559,9 @@ header .menu nav a:hover {
     font-size: 20px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   #team {
-    padding: 20px 5px;
+    padding: 20px 10px;
   }
   #team h1 {
     font-size: 28px;
@@ -535,19 +573,30 @@ header .menu nav a:hover {
     font-size: 16px;
     margin: 8px 0;
   }
+  #team .box {
+    flex-direction: column;
+    align-items: center;
+  }
   #team .box .imgbox img {
     width: 140px;
     height: 140px;
     margin: 0 0 15px 0;
   }
   #team .box .textbox {
+    margin: 0;
+    padding: 8px;
     width: 100%;
-    padding: 5px;
+    text-align: center;
+  }
+  #team .box .textbox ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
   }
   #team .box .textbox ul li .icon {
     width: 30px;
     height: 30px;
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 #portfolio {
@@ -630,64 +679,71 @@ header .menu nav a:hover {
   font-size: 20px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   #portfolio h1 {
-    font-size: 45px;
+    font-size: 42px;
   }
   #portfolio h5 {
     font-size: 20px;
+    margin: 15px 0 40px 0;
   }
-  #portfolio .textbox {
-    height: auto;
-    padding: 10px;
+  #portfolio .box {
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  #portfolio .textbox h2 {
-    margin: 20px 0 0 0;
+  #portfolio .box .imgbox::before {
+    font-size: 120px;
+  }
+  #portfolio .box .textbox {
+    padding: 0 15px;
+    height: 110px;
+  }
+  #portfolio .box .textbox h2 {
     font-size: 26px;
+    margin: 40px 0 -12px 0;
   }
-  #portfolio .textbox h5 {
+  #portfolio .box .textbox h5 {
     font-size: 18px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
+  #portfolio {
+    padding: 20px 10px;
+  }
   #portfolio h1 {
-    font-size: 36px;
+    font-size: 32px;
+    text-align: center;
   }
   #portfolio h5 {
-    font-size: 18px;
+    font-size: 16px;
+    margin: 10px 0 30px 0;
+    text-align: center;
   }
   #portfolio .box {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
   }
-  #portfolio .textbox {
-    width: 90%;
-    padding: 10px 15px;
-    text-align: center;
+  #portfolio .box .imgbox {
+    position: relative;
+    width: 100%;
   }
-  #portfolio .textbox h2 {
-    font-size: 24px;
+  #portfolio .box .imgbox::before {
+    font-size: 90px;
   }
-  #portfolio .textbox h5 {
-    font-size: 16px;
-  }
-}
-@media (max-width: 480px) {
-  #portfolio h1 {
-    font-size: 28px;
-  }
-  #portfolio h5 {
-    font-size: 16px;
-  }
-  #portfolio .textbox {
+  #portfolio .box .textbox {
     width: 100%;
     padding: 10px;
+    height: auto;
+    text-align: center;
   }
-  #portfolio .textbox h2 {
-    font-size: 20px;
+  #portfolio .box .textbox h2 {
+    font-size: 22px;
+    margin: 30px 0 -10px 0;
   }
-  #portfolio .textbox h5 {
-    font-size: 14px;
+  #portfolio .box .textbox h5 {
+    font-size: 16px;
   }
 }
 #welcome {
@@ -730,59 +786,59 @@ header .menu nav a:hover {
   font-weight: bold;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
+  #welcome {
+    height: auto;
+    flex-direction: column;
+    padding: 30px 20px;
+  }
   #welcome h1 {
     font-size: 40px;
+    margin: 20px 0;
   }
   #welcome h4 {
     font-size: 70px;
+    margin: 20px 0;
   }
   #welcome h5 {
-    font-size: 24px;
+    margin: 20px 0;
   }
   #welcome .btn {
     width: 180px;
+    height: 50px;
     font-size: 18px;
   }
+  #welcome .btn h5 {
+    margin: 4px;
+  }
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   #welcome {
+    height: auto;
     flex-direction: column;
+    padding: 20px 10px;
     justify-content: center;
-    padding: 20px;
-  }
-  #welcome h1, #welcome h4, #welcome h5 {
-    margin: 15px 10px;
+    align-items: center;
+    text-align: center;
   }
   #welcome h1 {
-    font-size: 32px;
+    font-size: 28px;
+    margin: 15px 0;
   }
   #welcome h4 {
-    font-size: 50px;
+    font-size: 45px;
+    margin: 15px 0;
   }
   #welcome h5 {
-    font-size: 20px;
+    margin: 15px 0;
   }
   #welcome .btn {
-    width: 160px;
-    font-size: 16px;
-    margin-top: 20px;
-  }
-}
-@media (max-width: 480px) {
-  #welcome h1 {
-    font-size: 24px;
-  }
-  #welcome h4 {
-    font-size: 36px;
-  }
-  #welcome h5 {
+    width: 150px;
+    height: 45px;
     font-size: 16px;
   }
-  #welcome .btn {
-    width: 100%;
-    font-size: 16px;
-    margin-top: 20px;
+  #welcome .btn h5 {
+    margin: 3px;
   }
 }
 #network {
@@ -794,18 +850,19 @@ header .menu nav a:hover {
   font-size: 70px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #network .box img {
     width: 150px;
     height: 150px;
-    font-size: 50px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 576px) {
+  #network {
+    padding: 20px 0;
+  }
   #network .box img {
-    width: 120px;
-    height: 120px;
-    font-size: 40px;
+    width: 100px;
+    height: 100px;
   }
 }
 footer {
@@ -832,19 +889,27 @@ footer .box .social-icons ul li .icon:hover {
   background-color: #454343;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   footer .box .social-icons ul {
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
   }
-  footer .box .social-icons ul li .icon {
-    margin: 10px 0;
-  }
-}
-@media (max-width: 480px) {
   footer .box .social-icons ul li .icon {
     width: 40px;
     height: 40px;
+    font-size: 22px;
+    margin: 0 8px;
+  }
+}
+@media (max-width: 576px) {
+  footer .box .social-icons ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  footer .box .social-icons ul li .icon {
+    width: 38px;
+    height: 38px;
     font-size: 20px;
+    margin: 5px 0;
   }
 }/*# sourceMappingURL=style.css.map */
