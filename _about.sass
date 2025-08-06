@@ -55,31 +55,57 @@
                 font-weight: bold
                 line-height: 1.3
 
-@media (max-width: 480px)
-    #about
-        h1
-            font-size: 32px
+    
+@media (max-width: 992px)
+  #about
+    h1
+      font-size: 42px
 
-        h5
-            font-size: 16px
+    h5
+      font-size: 20px
 
-        .textbox, .textbox1
-            margin: 0
-        h2
-            font-size: 22px
+    .textbox,
+    .textbox1
+      margin: 0 20px 40px 20px
 
-        .imgbox img, .lastbox
-            width: 120px
-            height: 120px
+      h2
+        font-size: 26px
 
-@media (max-width: 768px)
-    #about
-        h1
-            font-size: 40px
+        h4
+          font-size: 18px
 
-        .textbox, .textbox1
-            margin: 0
+    .imgbox img,
+    .lastbox
+      height: 150px
+      width: 150px
 
-        .imgbox img
-            width: 150px
-            height: 150px
+
+@media (max-width: 576px)
+  #about
+    h1
+      font-size: 32px
+      text-align: center
+
+    h5
+      font-size: 18px
+      text-align: center
+
+    .textbox,
+    .textbox1
+      margin: 0 10px 30px 10px
+      text-align: center
+
+      h2
+        font-size: 22px
+
+        h4
+          font-size: 16px
+
+    .imgbox img,
+    .lastbox
+      height: 120px
+      width: 120px
+
+    .lastbox .textbox h3
+      font-size: 18px
+      margin: 10px -20px -15px 20px

@@ -61,54 +61,56 @@
             font-weight: bold
 
 
-@media (max-width: 1024px)
+@media (max-width: 992px)
   #contact
-    .textbox h1 
-      font-size: 40px
+    .textbox
+      h1
+        font-size: 40px
 
-    .textbox h4
-      font-size: 18px
-      margin: 30px
+      h4
+        font-size: 18px
+        margin: 30px
+
+    .minibox,
+    .messagebox
+      width: 90%
+      margin: 20px auto
+
     .btn
       width: 180px
       font-size: 18px
+      margin: 40px auto
 
-    .messagebox 
-      height: 250px
 
-@media (max-width: 768px)
-  #contact 
+@media (max-width: 576px)
+  #contact
     padding: 30px 10px
+    height: auto
+    flex-direction: column
 
-    .textbox h1 
-      font-size: 32px
+    .textbox
+      h1
+        font-size: 28px
 
-    .textbox h4
-      font-size: 16px
-      margin: 20px
+      h4
+        font-size: 16px
+        margin: 20px
 
-    .messagebox, .minibox 
+    h5
+      font-size: 14px
+
+    .minibox,
+    .messagebox
+      width: 100%
+      margin: 15px auto
       flex-direction: column
-      align-items: flex-start
       height: auto
+
+    .messagebox h5
+      padding: 10px
+      margin: 5px
 
     .btn
       width: 160px
       font-size: 16px
-
-@media (max-width: 480px)
-  #contact
-    .textbox h1
-      font-size: 26px
-
-    .textbox h4
-      font-size: 14px
-
-    .btn
-      width: 100%
-      font-size: 16px
-      margin: 30px 0
-
-    .messagebox 
-        h5
-            font-size: 14px
+      margin: 30px auto

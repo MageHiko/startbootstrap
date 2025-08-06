@@ -18,7 +18,7 @@ header .imgbox img {
 header .menu {
   display: flex;
   justify-content: right;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #050505;
   background-size: cover;
   border-color: solid red;
 }
@@ -358,7 +358,7 @@ header .menu nav a:hover {
   border: 10px solid #dfe0e1;
 }
 #about .lastbox .textbox h3 {
-  margin: 0 50px;
+  margin: 10px -37px -22px 42px;
   font-size: 23px;
   font-weight: bold;
   line-height: 1.3;
@@ -570,16 +570,43 @@ header .menu nav a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 30px;
 }
 #portfolio .box .imgbox img {
-  font-size: 100px;
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: block;
+  transition: 0.3s ease;
 }
-#portfolio .box .imgbox img:hover {
-  background-color: white;
+#portfolio .box .imgbox::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
+  height: 69.2%;
+  background-color: rgba(255, 200, 0, 0.8);
+  opacity: 0;
+  transition: 0.3s ease;
+  z-index: 1;
+}
+#portfolio .box .imgbox::before {
+  content: "+";
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 150px;
+  color: white;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+#portfolio .box .imgbox:hover::after, #portfolio .box .imgbox:hover::before {
+  opacity: 1;
 }
 #portfolio .box .textbox {
   padding: 0 20px;

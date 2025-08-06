@@ -74,62 +74,70 @@
               font-size: 20px
 
 
-@media (max-width: 1024px)
+@media (max-width: 992px)
   #portfolio
     h1
-      font-size: 45px
+      font-size: 42px
 
     h5
       font-size: 20px
+      margin: 15px 0 40px 0
 
-    .textbox
-      height: auto
-      padding: 10px
+    .box
+      margin-bottom: 25px
+      flex-wrap: wrap
+      justify-content: center
 
-    .textbox h2
-      margin: 20px 0 0 0
-      font-size: 26px
+      .imgbox
+        &::before
+          font-size: 120px
 
-    .textbox h5
-      font-size: 18px
+      .textbox
+        padding: 0 15px
+        height: 110px
 
-@media (max-width: 768px)
+        h2
+          font-size: 26px
+          margin: 40px 0 -12px 0
+
+        h5
+          font-size: 18px
+
+
+@media (max-width: 576px)
   #portfolio
+    padding: 20px 10px
+
     h1
-      font-size: 36px
+      font-size: 32px
+      text-align: center
 
     h5
-      font-size: 18px
+      font-size: 16px
+      margin: 10px 0 30px 0
+      text-align: center
 
     .box
       flex-direction: column
       align-items: center
+      margin-bottom: 20px
 
-    .textbox
-      width: 90%
-      padding: 10px 15px
-      text-align: center
+      .imgbox
+        position: relative
+        width: 100%
 
-    .textbox h2
-      font-size: 24px
+        &::before
+          font-size: 90px
 
-    .textbox h5
-      font-size: 16px
+      .textbox
+        width: 100%
+        padding: 10px
+        height: auto
+        text-align: center
 
-@media (max-width: 480px)
-  #portfolio
-    h1
-      font-size: 28px
+        h2
+          font-size: 22px
+          margin: 30px 0 -10px 0
 
-    h5
-      font-size: 16px
-
-    .textbox
-      width: 100%
-      padding: 10px
-
-    .textbox h2
-      font-size: 20px
-
-    .textbox h5
-      font-size: 14px
+        h5
+          font-size: 16px

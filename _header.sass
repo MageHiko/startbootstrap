@@ -8,7 +8,7 @@ header
     .menu
         display: flex
         justify-content: right
-        background-color: rgba(0, 0, 0, 0.1)
+        background-color: #050505
         background-size: cover
         border-color: solid red
         nav
@@ -20,33 +20,43 @@ header
                 &:hover
                     color: #c0bd21
 
-@media (max-width: 768px)
+
+@media (max-width: 992px)
   header
     .imgbox
       img
         width: 120px
-        height: auto
-        margin: 10px auto
-        display: block
+        height: 40px
+        margin: 0 20px
 
     .menu
-      flex-direction: column
-      align-items: center
-      padding: 10px 0
+      justify-content: center
 
       nav
         a
           font-size: 18px
-          margin: 10px 0
+          margin-right: 20px
 
-@media (max-width: 480px)
+
+@media (max-width: 576px)
   header
+    flex-direction: column
+    align-items: center
+    padding: 10px 0
+
     .imgbox
       img
         width: 100px
+        height: 35px
+        margin: 0 10px 15px 10px
 
-    .menu 
-        nav 
-            a
-                font-size: 16px
-                margin: 8px 0
+    .menu
+      width: 100%
+      justify-content: center
+
+      nav
+        a
+          font-size: 16px
+          margin: 0 10px
+          display: inline-block
+          padding: 8px 5px
