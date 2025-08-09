@@ -157,7 +157,7 @@ header .menu nav a:hover {
     margin: 40px auto;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 395px) {
   #contact {
     padding: 30px 10px;
     height: auto;
@@ -171,20 +171,27 @@ header .menu nav a:hover {
     margin: 20px;
   }
   #contact h5 {
+    margin: 11px 7px 7px -250px;
     font-size: 14px;
   }
   #contact .minibox,
   #contact .messagebox {
-    width: 100%;
+    width: 108%;
     margin: 15px auto;
     flex-direction: column;
     height: auto;
+    border-radius: 2px;
+  }
+  #contact .messagebox {
+    height: 150px;
   }
   #contact .messagebox h5 {
     padding: 10px;
     margin: 5px;
   }
   #contact .btn {
+    display: flex;
+    justify-content: center;
     width: 160px;
     font-size: 16px;
     margin: 30px auto;
@@ -257,7 +264,7 @@ header .menu nav a:hover {
     font-size: 16px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 395px) {
   #services {
     padding: 30px 10px;
   }
@@ -278,7 +285,10 @@ header .menu nav a:hover {
     align-items: center;
   }
   #services .box .icon {
-    margin: 0 0 20px 0;
+    display: d-flex;
+    align-content: center;
+    align-items: center;
+    margin: 5px 0px 27px 113px;
     font-size: 60px;
     width: 120px;
     height: 120px;
@@ -309,16 +319,16 @@ header .menu nav a:hover {
   line-height: 1.4;
   font-style: italic;
 }
-#about .textbox {
+#about .textbox, #about .textbox2 {
   margin: 0px 119px 18px 20px;
   margin-bottom: 40px;
   line-height: 1.5;
 }
-#about .textbox h2 {
+#about .textbox h2, #about .textbox2 h2 {
   font-size: 30px;
   font-weight: bold;
 }
-#about .textbox h2 h4 {
+#about .textbox h2 h4, #about .textbox2 h2 h4 {
   font-size: 20px;
   color: #787272;
 }
@@ -380,26 +390,35 @@ header .menu nav a:hover {
   #about h5 {
     font-size: 20px;
   }
-  #about .textbox,
-  #about .textbox1 {
-    margin: 0 20px 40px 20px;
-  }
-  #about .textbox h2,
   #about .textbox1 h2 {
     font-size: 26px;
   }
-  #about .textbox h2 h4,
   #about .textbox1 h2 h4 {
     font-size: 18px;
   }
-  #about .imgbox img,
-  #about .imgbox1 img,
+  #about .textbox h2 {
+    font-size: 26px;
+  }
+  #about .textbox h2 h4 {
+    font-size: 18px;
+  }
+  #about .imgbox img {
+    margin: 0 0 0 7px;
+    height: 150px;
+    width: 150px;
+  }
+  #about .imgbox1 img {
+    margin: 0 0 0 0;
+    height: 150px;
+    width: 150px;
+  }
   #about .lastbox {
+    margin: 0 0 0 0;
     height: 150px;
     width: 150px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 395px) {
   #about h1 {
     font-size: 32px;
     text-align: center;
@@ -408,28 +427,49 @@ header .menu nav a:hover {
     font-size: 18px;
     text-align: center;
   }
-  #about .textbox,
-  #about .textbox1 {
-    margin: 0 10px 30px 10px;
-    text-align: center;
+  #about .textbox2 {
+    margin: -174px 17px 51px 155px;
+    text-align: start;
   }
-  #about .textbox h2,
-  #about .textbox1 h2 {
+  #about .textbox2 h2 {
     font-size: 22px;
   }
-  #about .textbox h2 h4,
-  #about .textbox1 h2 h4 {
+  #about .textbox2 h2 h4 {
     font-size: 16px;
   }
-  #about .imgbox img,
-  #about .imgbox1 img,
-  #about .lastbox {
-    height: 120px;
-    width: 120px;
+  #about .textbox1 {
+    padding: 0px 3px 129px 12px;
+    margin: -35px 27px -241px 131px;
   }
-  #about .lastbox .textbox h3 {
-    font-size: 18px;
-    margin: 10px -20px -15px 20px;
+  #about .textbox1 h2 {
+    text-align: start;
+    font-size: 22px;
+  }
+  #about .textbox1 h2 h4 {
+    text-align: start;
+    font-size: 16px;
+  }
+  #about .imgbox img {
+    margin: -182px 0px 142px -1px;
+    display: flex;
+    height: 140px;
+    width: 140px;
+  }
+  #about .imgbox1 img {
+    margin: 39px 236px -16px 30px;
+    display: flex;
+    height: 140px;
+    width: 140px;
+  }
+  #about .lastbox {
+    margin: -40px 0px 0px -239px;
+    display: flex;
+    height: 140px;
+    width: 140px;
+  }
+  #about .lastbox .textboxl h3 {
+    margin: 6px 31px 12px 33px;
+    font-size: 17px;
   }
 }
 #team {
@@ -444,7 +484,7 @@ header .menu nav a:hover {
   font-size: 30px;
   font-weight: bold;
 }
-#team h4, #team h5 {
+#team h4, #team h3, #team h5 {
   font-weight: 300;
   font-size: 23px;
   color: #a8a8a8;
@@ -502,7 +542,7 @@ header .menu nav a:hover {
   #team h2 {
     font-size: 26px;
   }
-  #team h4, #team h5 {
+  #team h4, #team h3, #team h5 {
     font-size: 20px;
     margin: 15px 0;
   }
@@ -531,7 +571,7 @@ header .menu nav a:hover {
   #team h2 {
     font-size: 22px;
   }
-  #team h4, #team h5 {
+  #team h4, #team h3, #team h5 {
     font-size: 18px;
     margin: 10px 0;
   }
@@ -559,7 +599,7 @@ header .menu nav a:hover {
     font-size: 20px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 395px) {
   #team {
     padding: 20px 10px;
   }
@@ -567,11 +607,15 @@ header .menu nav a:hover {
     font-size: 28px;
   }
   #team h2 {
-    font-size: 18px;
+    margin: 0px 59px 0px 72px;
+    font-size: 22px;
   }
-  #team h4, #team h5 {
-    font-size: 16px;
+  #team h4, #team h3, #team h5 {
+    font-size: 18px;
     margin: 8px 0;
+  }
+  #team h4 {
+    margin: 2px 0px 5px 18px;
   }
   #team .box {
     flex-direction: column;
@@ -788,33 +832,34 @@ header .menu nav a:hover {
 
 @media (max-width: 992px) {
   #welcome {
-    height: auto;
+    height: 70vh;
     flex-direction: column;
     padding: 30px 20px;
   }
   #welcome h1 {
-    font-size: 40px;
+    font-size: 30px;
     margin: 20px 0;
   }
   #welcome h4 {
-    font-size: 70px;
+    font-size: 60px;
     margin: 20px 0;
   }
   #welcome h5 {
     margin: 20px 0;
   }
   #welcome .btn {
+    margin: 30px;
     width: 180px;
     height: 50px;
-    font-size: 18px;
+    font-size: 15px;
   }
   #welcome .btn h5 {
     margin: 4px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 395px) {
   #welcome {
-    height: auto;
+    height: 70vh;
     flex-direction: column;
     padding: 20px 10px;
     justify-content: center;
@@ -822,7 +867,7 @@ header .menu nav a:hover {
     text-align: center;
   }
   #welcome h1 {
-    font-size: 28px;
+    font-size: 25px;
     margin: 15px 0;
   }
   #welcome h4 {
@@ -856,13 +901,21 @@ header .menu nav a:hover {
     height: 150px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 395px) {
   #network {
-    padding: 20px 0;
+    padding: 30px 0;
+  }
+  #network .box {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
   }
   #network .box img {
-    width: 100px;
-    height: 100px;
+    margin: -60px 0px 0px 0px;
+    width: 150px;
+    height: 150px;
   }
 }
 footer {
@@ -900,9 +953,12 @@ footer .box .social-icons ul li .icon:hover {
     margin: 0 8px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 395px) {
+  footer h4, footer h5 {
+    margin: 0px -89px 0px 102px;
+  }
   footer .box .social-icons ul {
-    flex-direction: column;
+    margin: 18px 145px 15px 121px;
     align-items: center;
     gap: 10px;
   }

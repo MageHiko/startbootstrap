@@ -10,7 +10,7 @@
         color: #444343
         line-height: 1.4
         font-style: italic
-    .textbox
+    .textbox, .textbox2
         margin: 0px 119px 18px 20px
         margin-bottom: 40px
         line-height: 1.5
@@ -72,24 +72,30 @@
     h5
       font-size: 20px
 
-    .textbox,
     .textbox1
-      margin: 0 20px 40px 20px
-
       h2
         font-size: 26px
-
         h4
           font-size: 18px
-
-    .imgbox img,
-    .imgbox1 img,
+    .textbox
+      h2
+        font-size: 26px
+        h4
+          font-size: 18px
+    .imgbox img
+      margin: 0 0 0 7px
+      height: 150px
+      width: 150px
+    .imgbox1 img
+      margin: 0 0 0 0
+      height: 150px
+      width: 150px
     .lastbox
+      margin: 0 0 0 0
       height: 150px
       width: 150px
 
-
-@media (max-width: 576px)
+@media (max-width: 395px)
   #about
     h1
       font-size: 32px
@@ -98,24 +104,45 @@
     h5
       font-size: 18px
       text-align: center
-
-    .textbox,
-    .textbox1
-      margin: 0 10px 30px 10px
-      text-align: center
-
+    
+    .textbox2
+      margin: -174px 17px 51px 155px
+      text-align: start
       h2
         font-size: 22px
-
         h4
           font-size: 16px
 
-    .imgbox img,
-    .imgbox1 img,
-    .lastbox
-      height: 120px
-      width: 120px
+    .textbox1
+      padding: 0px 3px 129px 12px
+      margin: -35px 27px -241px 131px
+      h2
+        text-align: start
+        font-size: 22px
+        h4
+          text-align: start
+          font-size: 16px
 
-    .lastbox .textbox h3
-      font-size: 18px
-      margin: 10px -20px -15px 20px
+    .imgbox img
+      margin: -182px 0px 142px -1px
+      display: flex
+      height: 140px
+      width: 140px
+
+    .imgbox1 img
+      margin: 39px 236px -16px 30px
+      display: flex
+      height: 140px
+      width: 140px
+
+    .lastbox
+      margin: -40px 0px 0px -239px
+      display: flex
+      height: 140px
+      width: 140px
+      .textboxl
+            h3
+                margin: 6px 31px 12px 33px
+                font-size: 17px
+
+
