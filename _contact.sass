@@ -1,124 +1,52 @@
 #contact
-    padding: 40px 0
-    height: 100vh
-    background-color: black
-    background-image: url("Assets/map-image.png")
-    background-size: cover
-    display: flex
-    justify-content: center
-    align-items: center
-    text-align: center
-    color: white
-    .textbox
+    background-image: url(assets/map-image.png)
+    background-color: #212529
+    background-position: center center
+    .box
+        margin-top: 60px
         h1
-            margin: 10px
             color: #ffff
             font-size: 50px
-            font-weight: bold
-        h4
-            margin: 40px
+            margin-bottom: 16px
+            font-weight: 700
+        h3
             font-size: 20px
-            font-style: italic
-            color: #999595
-    h5
-        margin: 10px
-        color: #838080
-    .minibox
-        margin: 20px
-        height: 80px
-        width: 100%
-        border: 5px
-        background-color: #ffff
-        color: black
-        border-radius: 10px
-        align-items: center
-    .messagebox
-        margin: 20px
-        height: 300px
-        width: 100%
-        border: 5px
-        background-color: #ffff
-        color: black
-        border-radius: 10px
-        h5
-            padding: 20px
-            margin: 10px 10px
-    .messagebox, .minibox
-        margin: 30px
+            color: #6c757d
+    .place
         display: flex
-        text-align: start
-
-    .btn
-        margin: 50px
-        height: 55px
-        width: 210px
+        flex-direction: column
+        margin-top: 44px
+        input
+            margin: 14px 0
+            padding: 20px 20px
+            font-size: 20px
+            font-weight: 700
+    .textbox
+        display: flex
+        margin-top: 55px
         font-size: 20px
-        border-radius: 5px
-        background-color: #b28f0e
-        color: #ffff
-        h5
-            margin: 6px
-            font-weight: bold
-
-
-@media (max-width: 992px)
-  #contact
-    .textbox
-      h1
-        font-size: 40px
-
-      h4
-        font-size: 18px
-        margin: 30px
-
-    .minibox,
-    .messagebox
-      width: 90%
-      margin: 20px auto
-
+        textarea
+            color: #cecacaef
+            border-radius: 5px
+            font-weight: 700
+            padding: 18px
     .btn
-      width: 180px
-      font-size: 18px
-      margin: 40px auto
+        padding: 15px 35px
+        margin: 40px 0
+        background-color: #ffc021
+        border-radius: 7px
+        opacity: 0.7
+        h2
+            font-size: 25px
+            font-weight: 700
+            color: #ffff
+    @media screen and ( max-width: 768px )
+        .textbox
+            margin-top: 15px
 
-
-@media (max-width: 395px)
-  #contact
-    padding: 30px 10px
-    height: auto
-    flex-direction: column
-
-    .textbox
-      h1
-        font-size: 28px
-
-      h4
-        font-size: 16px
-        margin: 20px
-
-    h5
-      margin: 11px 7px 7px -250px
-      font-size: 14px
-
-    .minibox,
-    .messagebox
-      width: 108%
-      margin: 15px auto
-      flex-direction: column
-      height: auto
-      border-radius: 2px
-
-
-    .messagebox
-      height: 150px
-
-    .messagebox h5
-      padding: 10px
-      margin: 5px
-
-    .btn
-      display: flex
-      justify-content: center
-      width: 160px
-      font-size: 16px
-      margin: 30px auto
+    @media screen and ( max-width: 576px )
+        .box
+            h1
+                font-size: 45px
+            h3
+                font-size: 18px

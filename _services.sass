@@ -1,104 +1,73 @@
 #services
-    padding: 40px 0
-    h1
-        margin: 20px
-        display: flex
-        justify-content: center
-        font-weight: 700
-        font-size: 60px
-        color: black
-    h5
-        margin: 50px 20px
-        display: flex
-        justify-content: center
-        font-size: 30px
-        color: #888787
-        font-style: italic
+    padding: 90px 0
+    .textbox
+        h1
+            font-size: 60px
+            font-weight: 700
+            margin-bottom: 10px
+            cursor: text
+        h3
+            font-size: 20px
+            color: #828080
+            margin: 20px 0 55px
+            cursor: text
     .box
+        display: flex
+        justify-content: center
         .icon
-            margin: 0 120px 20px
             display: flex
-            justify-content: space-evenly
+            justify-content: center
             align-items: center
-            font-size: 100px
-            width: 180px
-            height: 180px
-            border-radius: 50%
+            width: 140px
+            height: 140px
             background-color: #ffc800
+            border-radius: 70px
+            font-size: 70px
             color: #ffff
+    h2
+        font-size: 29px
+        font-weight: 700
+        margin: 15px 20px
+        cursor: text
+    h4
+        font-size: 20px
+        line-height: 1.4
+        color: #838489
+        cursor: text
+
+    @media screen and ( max-width: 768px  )
         .textbox
+            padding: 0 0 30px
+            h1
+                font-size: 55px
+            h3
+                font-size: 22px
             h2
-                font-weight: 900
-                font-size: 35px
-                margin-bottom: 9px
-                font-weight: bold
-                line-height: 1.5
+                font-size: 27px
             h4
-                font-size: 18px
-                color: #7a7777
-                line-height: 1.3
-
-
-@media (max-width: 992px)
-  #services
-    h1
-      font-size: 48px
-      margin: 15px
-
-    h5
-      font-size: 24px
-      margin: 40px 15px
-
-    .box
-      .icon
-        margin: 0 80px 20px
-        font-size: 80px
-        width: 140px
-        height: 140px
-
-      .textbox
-        h2
-          font-size: 28px
-          margin-bottom: 7px
-
-        h4
-          font-size: 16px
-
-@media (max-width: 395px)
-  #services
-    padding: 30px 10px
-
-    h1
-      font-size: 36px
-      margin: 10px
-      justify-content: center
-      text-align: center
-
-    h5
-      font-size: 20px
-      margin: 30px 10px
-      justify-content: center
-      text-align: center
-
-    .box
-      flex-direction: column
-      align-items: center
-
-      .icon
-        display: d-flex
-        align-content: center
-        align-items: center
-        margin: 5px 0px 27px 113px
-        font-size: 60px
-        width: 120px
-        height: 120px
-
-      .textbox
-        text-align: center
-
-        h2
-          font-size: 24px
-          margin-bottom: 6px
-
-        h4
-          font-size: 14px
+                font-size: 21px 
+        .box
+            .icon
+                width: 120px
+                height: 120px
+                border-radius: 60px
+                font-size: 60px
+                color: #ffff
+    @media screen and ( max-width: 480px  )
+        .textbox
+            padding: 0 0 30px
+            h1
+                font-size: 44px
+            h3
+                font-size: 15px
+            h2
+                font-size: 20px
+            h4
+                font-size: 16px 
+        .box
+            .icon
+                width: 100px
+                height: 100px
+                border-radius: 50px
+                font-size: 50px
+                color: #ffff
