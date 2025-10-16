@@ -605,7 +605,7 @@ header .menu .btn .icon {
 }
 
 #welcome {
-  background-image: url(/Assets/header-bg.jpg);
+  background-image: url(Assets/header-bg.jpg);
   background-position: center;
   background-size: cover;
 }
