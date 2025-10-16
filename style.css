@@ -90,7 +90,7 @@ header .menu .btn .icon {
   }
 }
 #contact {
-  background-image: url(assets/map-image.png);
+  background-image: url(Assets/map-image.png);
   background-color: #212529;
   background-position: center center;
 }
@@ -605,7 +605,7 @@ header .menu .btn .icon {
 }
 
 #welcome {
-  background-image: url(/assets/header-bg.jpg);
+  background-image: url(/Assets/header-bg.jpg);
   background-position: center;
   background-size: cover;
 }
